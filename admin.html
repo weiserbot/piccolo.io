@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Administrator</title>
+</head>
+<body>
+
+  <h2>Piccolo Register</h2>
+	<!-- Navigation -->
+	<ul id="navigation">
+ 	<li><a href="index.html"><button class="nav-btn">Inventory</button></a></li>
+		<li><a href="admin.html"><button class="nav-btn">Administrator</button></a></li>
+	</ul>
+
+
+  <button onclick="createDatabase();">Create Database</button>
+	<button><a id="backup-inventory" download="inventorybackup.json">Backup Inventory</a></button>
+
+  <div id="restore-container">
+    <label>Restore Inventory</label>
+	  <input type="file" id="file-input">
+  </div>
+  <script src="admin.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  background: rgb(32,27,103);
+  background: linear-gradient(90deg, rgba(32,27,103,1) 0%, rgba(82,145,255,1) 73%, rgba(0,153,255,1) 100%);
+  font-size: larger;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+#submit,
+button {
+  height: 35px;
+  width: 100px;
+  border-radius: 25px;
+  border: 1px;
+  margin: 10px;
+  font-size: 15px;
+}
+
+#navigation {
+	display: flex;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+	margin: 0px;
+}
+
+input {
+  font-size: 15px;
+  height: 20px;
+  border-radius: 5px;
+  border: 0px;
+}
+
+li {
+	list-style: none;
+	margin-left: 20px;
+}
+
+#sku,
+#price {
+  width: 12dvw;
+}
+
+#item {
+  width: 45dvw;
+}
+
+#sku-heading,
+#price-heading {
+	width: 15dvw;
+}
+
+#item-heading {
+	width: 65dvw;
+}
+
+#item-table-container{
+	background-color: lightgray;
+	height: 60dvh;
+	width: 97dvw;
+	overflow: scroll;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+
+th {
+	width: 400px;
+}
+
+td:hover {
+	background-color: rgb(112, 175, 226);
+}
+
+td:active {
+	background-color: rgb(14, 116, 172);
+}
+
+tbody tr:nth-child(even) {
+	background-color: rgb(189, 214, 240);
+}
+
+tbody tr:nth-child(odd) {
+	background-color: rgb(255, 255, 255);
+}
+
+#restore-container {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+}

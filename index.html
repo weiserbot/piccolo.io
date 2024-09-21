@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Piccolo Register</title>
+</head>
+<body>
+
+	<h2>Piccolo Register</h2>
+	<!-- Navigation -->
+	<ul id="navigation">
+ 	<li><a href="index.html"><button class="nav-btn">Inventory</button></a></li>
+		<li><a href="admin.html"><button class="nav-btn">Administrator</button></a></li>
+	</ul>
+
+
+	<!-- Item Form Component -->
+	<div id="item-form-container">
+	<form id="item-form" onsubmit="newItem(this)">
+		<input type="text" id="sku" name="sku" placeholder="sku" required>
+		<input type="text" id="item" name="item" placeholder="item" required>
+		<input type="text" id="price" name="price" placeholder="price" required>
+		<input type="submit"id="submit">
+	</form>
+
+	<button onclick="getItemList();">Refresh</button>
+	<button onclick="updateItem();">Update</button>
+	<button onclick="deleteItem();">Delete</button>
+
+	</div>
+
+	<!-- Item Table -->
+	<div id="item-table-container">
+		<table id="item-table">
+			<thead>
+				<th id="sku-heading">Sku</th>
+				<th id="item-heading">Item</th>
+				<th id="price-heading">Price</th>
+			</thead>
+			<tbody>
+				<!--  Below an example of the elemenst created and appended to this table. Check script.js -->
+				<!-- <tr onclick="selectRow(this)"><td>Roberto J. Alvarez</td><td>robertjao@outlook.com</td><td>787-930-9996</td><td>robertjao</td><td>1234</td></tr> -->
+			</tbody>
+		</table>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
