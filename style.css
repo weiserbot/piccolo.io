@@ -1,61 +1,57 @@
 body {
   background: rgb(32,27,103);
   background: linear-gradient(90deg, rgba(32,27,103,1) 0%, rgba(82,145,255,1) 73%, rgba(0,153,255,1) 100%);
-  font-size: larger;
+  font-size: 1.2rem;
 	font-family: sans-serif;
 	text-align: center;
 }
 
 #submit,
 button {
-  height: 35px;
-  width: 100px;
-  border-radius: 25px;
+	height: 2rem;
+  border-radius: 5px;
   border: 1px;
-  margin: 10px;
-  font-size: 15px;
+  font-size: 1.2rem;
+	margin: 5px 15px;
 }
 
-#navigation {
+.navigation {
 	display: flex;
+	justify-content: center;
 }
+
 
 a {
   text-decoration: none;
 }
 
-h2 {
-	margin: 0px;
-}
-
 input {
-  font-size: 15px;
-  height: 20px;
+  font-size: 1.2rem;
+  height: 1.5rem;
   border-radius: 5px;
   border: 0px;
 }
 
 li {
 	list-style: none;
-	margin-left: 20px;
 }
 
 #sku,
 #price {
-  width: 12dvw;
+  width: 8rem;
 }
 
 #item {
-  width: 45dvw;
+  width: 25rem;
 }
 
 #sku-heading,
 #price-heading {
-	width: 15dvw;
+	width: 14em;
 }
 
 #item-heading {
-	width: 65dvw;
+	width: 50em;
 }
 
 #item-table-container{
@@ -88,8 +84,7 @@ tbody tr:nth-child(odd) {
 	background-color: rgb(255, 255, 255);
 }
 
-#restore-container {
-  display: inline-block;
-  padding: 20px;
-  text-align: center;
+#file-input {
+	background-color: rgb(90, 97, 110);
+	color: white;
 }

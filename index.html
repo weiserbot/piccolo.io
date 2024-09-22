@@ -10,11 +10,10 @@
 
 	<h2>Piccolo Register</h2>
 	<!-- Navigation -->
-	<ul id="navigation">
- 	<li><a href="index.html"><button class="nav-btn">Inventory</button></a></li>
+	<ul class="navigation">
+		<li><a href="index.html"><button class="nav-btn">Inventory</button></a></li>
 		<li><a href="admin.html"><button class="nav-btn">Administrator</button></a></li>
 	</ul>
-
 
 	<!-- Item Form Component -->
 	<div id="item-form-container">
@@ -22,13 +21,14 @@
 		<input type="text" id="sku" name="sku" placeholder="sku" required>
 		<input type="text" id="item" name="item" placeholder="item" required>
 		<input type="text" id="price" name="price" placeholder="price" required>
-		<input type="submit"id="submit">
+		<br><br>
+		<div class="navigation">
+			<button onclick="getItemList();">Refresh</button>
+			<button onclick="updateItem();">Update</button>
+			<button onclick="deleteItem();">Delete</button>
+			<input type="submit"id="submit">
+		</div>
 	</form>
-
-	<button onclick="getItemList();">Refresh</button>
-	<button onclick="updateItem();">Update</button>
-	<button onclick="deleteItem();">Delete</button>
-
 	</div>
 
 	<!-- Item Table -->
